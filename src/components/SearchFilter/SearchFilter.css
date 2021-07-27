@@ -1,0 +1,49 @@
+.fieldbox {
+  position: relative;
+  width: 100%;
+  padding-left: 1%;
+  margin-top: 1%;
+}
+
+.tagfieldbox {
+  position: relative;
+  width: 100%;
+  padding-left: 1%;
+  margin-top: 2%;
+}
+
+.field {
+  font-size: 28px;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid lightgray;
+  width: 99.2%;
+  height: 5vh;
+  padding-left: 1%;
+}
+
+.field:hover,
+.field:focus {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1149px) {
+  .field {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1149px) {
+  .fieldbox {
+    width: 100%;
+  }
+  .tagfieldbox {
+    width: 100%;
+  }
+  .field {
+    font-size: 22px;
+    padding: 4% 0 4% 0;
+  }
+}

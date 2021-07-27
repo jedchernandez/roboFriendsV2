@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Robo Friends V2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run the app:
 
-## Available Scripts
+### `npm i && npm start`
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to run tests:
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Troubleshooting Installation:
 
-### `npm run build`
+If you run into this issue:
+Error: No version of chokidar is available. Tried chokidar@2 and chokidar@3.
+run `npm update` first before running `npm start` again.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Design Decisions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### State Management
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I used useReducer and useContext instead of local storage for state management
+You can check commit #6 for the local storage version.
 
-### `npm run eject`
+### Responsive Design
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+I decided the application to have a fixed width and height to replicate the same width and height from the demo. I used the demo videos on fullscreen as reference.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Vanilla CSS vs TailwindCSS vs CSS Preprocessors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+I was thinking of using css preprocessors like Sass or Less since I know it can make my css more modular and reusable. I also know that some projects use TailwindCSS or CSS in JS. But with the interest of time, I stuck with vanilla css since I'm more comfortable with it.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### JavaScript vs TypeScript
 
-## Learn More
+I decided to just use JavaScript for now since I'm more comfortable with that.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Create-React-App vs other bundlers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+I decided to use Create-react-app to develop the application. But I could have used other bundlers like Parcel to bundle everything.
 
-### Code Splitting
+### Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I only tested the major functionality of the application using one integration test and the rest are unit tests.
+I also used the testing library that came with Create-react-app to create my tests.
 
-### Analyzing the Bundle Size
+### Architecture
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![alt text](ComponentTree.png)
 
-### Making a Progressive Web App
+### Nice to Have:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add debounce to search feature for optimization
+- Persisting state in some storage either in a database or browserstorage

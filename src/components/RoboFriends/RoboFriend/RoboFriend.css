@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap");
+
+/* Card Container */
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+/* Image Container */
+.image-container {
+  margin: 35px 0 0 24px;
+  width: 10%;
+  height: 100%;
+}
+
+/* Image */
+.circle {
+  width: 190px;
+  height: 190px;
+  border: 1px solid rgb(163, 156, 156);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+
+/* Robo-friend Container */
+.robo-friend-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin: 1% 0 1% 0;
+  width: 65%;
+}
+
+/* Button Container */
+.button-container {
+  margin-top: 29.5px;
+}
+
+/* Robo-friend Name */
+.fullname {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 30px;
+  margin: 1% 0 0 0;
+}
+
+/* Button */
+.btn {
+  font-size: 45px;
+  display: flex;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: none;
+  color: rgb(160, 158, 158);
+  cursor: pointer;
+  width: 9%;
+  height: 4vh;
+}
+
+.btn:hover {
+  color: black;
+}
+
+/* Profile Container */
+.profile {
+  margin: 0px 0px 0 30px;
+  line-height: 10px;
+  font-size: 20px;
+}
+
+/* Test Container */
+.income-container-collapsed {
+  display: none;
+  width: 47%;
+}
+
+.income-container-expanded {
+  width: 47%;
+}
+
+ul {
+  padding: 0;
+}
+
+.income-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.dayNumber {
+  margin: 0;
+  padding: 0;
+  margin-right: 7%;
+}
+
+.dayValue {
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Query */
+@media screen and (min-width: 280px) and (max-width: 1149px) {
+  .card {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+  }
+  .image-container {
+    margin: 0 0 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+  .robo-friend-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+    order: 3;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    margin: 0;
+    order: 1;
+  }
+  .fullname {
+    font-size: 22px;
+  }
+  .profile {
+    font-size: 14px;
+    margin: 0;
+  }
+  .income-container-plus {
+    display: none;
+    width: 98px;
+    height: 136px;
+    margin-bottom: 3%;
+  }
+  .income-container-minus {
+    width: 98px;
+    height: 136px;
+    margin-bottom: 3%;
+  }
+  .income-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 98px;
+  }
+  .btn {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 564px) and (max-width: 1149px) {
+  .fullname {
+    font-size: 28px;
+  }
+  .profile {
+    font-size: 20px;
+  }
+  .income-container-plus {
+    width: 115px;
+    margin-bottom: 10%;
+  }
+  .income-container-minus {
+    width: 115px;
+    margin-bottom: 10%;
+  }
+  .income-container {
+    font-size: 20px;
+    width: 145px;
+  }
+  .btn {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 804px) and (max-width: 1149px) {
+  .fullname {
+    font-size: 28px;
+  }
+  .day {
+    margin-left: 40%;
+  }
+  .btn {
+    font-size: 52px;
+  }
+}

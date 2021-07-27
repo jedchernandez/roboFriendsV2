@@ -1,38 +1,40 @@
+html,
+.root {
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 1) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  width: 1000px;
+  height: 800px;
+  background-color: #9febcf;
+  border-radius: 3mm;
+  box-shadow: 0 1px 5px 0.3px rgb(117, 117, 117);
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 40px;
+  font-family: "SEGA LOGO FONT";
+  font-weight: 200;
+  color: rgb(7, 27, 82);
+  padding: 0;
+  margin: 2% 0 0 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Media Query */
+@media only screen and (max-width: 1150px) {
+  .App {
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
   }
 }
