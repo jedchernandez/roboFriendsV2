@@ -5,17 +5,17 @@
     "main.js.map": "/frontend-assessment/static/js/main.1d7e8488.chunk.js.map",
     "runtime-main.js": "/frontend-assessment/static/js/runtime-main.2cae76b0.js",
     "runtime-main.js.map": "/frontend-assessment/static/js/runtime-main.2cae76b0.js.map",
-    "static/js/2.dc3a39c5.chunk.js": "/frontend-assessment/static/js/2.dc3a39c5.chunk.js",
-    "static/js/2.dc3a39c5.chunk.js.map": "/frontend-assessment/static/js/2.dc3a39c5.chunk.js.map",
+    "static/js/2.d8243902.chunk.js": "/frontend-assessment/static/js/2.d8243902.chunk.js",
+    "static/js/2.d8243902.chunk.js.map": "/frontend-assessment/static/js/2.d8243902.chunk.js.map",
     "static/js/3.f784231d.chunk.js": "/frontend-assessment/static/js/3.f784231d.chunk.js",
     "static/js/3.f784231d.chunk.js.map": "/frontend-assessment/static/js/3.f784231d.chunk.js.map",
     "index.html": "/frontend-assessment/index.html",
     "static/css/main.39f4bf80.chunk.css.map": "/frontend-assessment/static/css/main.39f4bf80.chunk.css.map",
-    "static/js/2.dc3a39c5.chunk.js.LICENSE.txt": "/frontend-assessment/static/js/2.dc3a39c5.chunk.js.LICENSE.txt"
+    "static/js/2.d8243902.chunk.js.LICENSE.txt": "/frontend-assessment/static/js/2.d8243902.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2cae76b0.js",
-    "static/js/2.dc3a39c5.chunk.js",
+    "static/js/2.d8243902.chunk.js",
     "static/css/main.39f4bf80.chunk.css",
     "static/js/main.1d7e8488.chunk.js"
   ]
